@@ -88,12 +88,12 @@ autoencoder.fit(x_train_noisy, x_train_scaled,
                 shuffle=True,
                 validation_data=(x_test_noisy, x_test_scaled))
 
-print("Rithiga Sri.B 212221230083")
+print("chaithanya chowla 2305002004")
 metrics = pd.DataFrame(autoencoder.history.history)
 metrics[['loss','val_loss']].plot()
 
 decoded_imgs = autoencoder.predict(x_test_noisy)
-print("Rithiga Sri.B 212221230083")
+print("chaithanya chowla 2305002004")
 n = 10
 plt.figure(figsize=(20, 4))
 for i in range(1, n + 1):
@@ -122,9 +122,11 @@ plt.show()
 
 ## OUTPUT:
 ### Training Loss, Validation Loss Vs Iteration Plot:
-![image](https://github.com/Rithigasri/Convolutional-denoising-autoencoder/assets/93427256/50b68d34-7f7d-43fb-b6f7-9755542b3072)
+<img width="825" height="537" alt="Screenshot 2025-11-11 214030" src="https://github.com/user-attachments/assets/a5009d70-1231-4c74-bf95-8034d780f941" />
+
 ### Original vs Noisy Vs Reconstructed Image:
-![image](https://github.com/Rithigasri/Convolutional-denoising-autoencoder/assets/93427256/1b23a3a8-3985-4683-a5c5-081682b64ebb)
+<img width="1691" height="369" alt="image" src="https://github.com/user-attachments/assets/deb5e0a0-746e-4bd0-95b0-ca5036b3bcdc" />
+
 
 ## RESULT:
 Thus we have successfully developed a convolutional autoencoder for image denoising application.
